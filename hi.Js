@@ -1,6 +1,7 @@
-
-let fortune = prompt("Whats in store for you?");
-
+function fortune() {
+    prompt("Whats in store for you?");
+}
+fortune();
 const replies = [
     "You will have a great day ",
     "Today avoid the metro",
@@ -13,9 +14,9 @@ const replies = [
 ];
 const randomGenerator = Math.floor(Math.random() * replies.length) % replies.length;
 
-if (replies != undefined) {
+if (replies != null) {
     alert(replies[randomGenerator])
-} else if (replies = undefined) {
+} else if (replies = null) {
     console.log("have a good day")
 }
 
